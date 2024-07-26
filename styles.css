@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: o;
+  margin: 0;
 }
 body {
   background-color: salmon;
@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .clock {
@@ -83,11 +84,16 @@ img {
   border-radius: 50% 50% 0 0;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-.hands .hour{
-    height: 80px;
-    transform: rotate(30deg);
+.hands .hour {
+  height: 100px;
+  transform: rotate(0deg);
 }
-.hands .sec{
-    transform: rotate(250deg);
-    background-color: goldenrod;
+.hands .min {
+  height: 140px;
+  transform: rotate(0deg);
+}
+.hands .sec {
+  height: 150px;
+  transform: rotate(0deg);
+  background-color: goldenrod;
 }
